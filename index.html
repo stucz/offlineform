@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+<!--<<html lang="en">-->
+<head>
+<meta charset="UTF-8">
+<title>Outback</title>
+
+<!-- icon for home screen -->
+<link rel="apple-touch-icon" href="OfflineAppForm114x114.png"/>
+
+
+<!-- Mobile Viewport -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<!-- firbase -->
+<script src="firebase.js"></script>
+
+
+<!-- Main JS -->
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="offlineData.js"></script>
+
+
+<!-- CSS Styles -->
+<link rel="stylesheet" href="style.css" />
+
+
+
+
+</head>
+<body>
+
+<article role="main">
+ 
+    <header role="banner">
+    	<div id="logo"></div>
+		<button type="button" class="right-header-button"></button>
+		
+    </header> 
+    
+    <section id="form">
+    	<div id="dontmissdeal"></div>
+    	<br />
+    	<div id="join">Join the Outback 365 offers program for some special treatment 'round the year.</div>
+	    <fieldset id="required">
+	    	<div class="inputLabel">First Name*</div>
+			<input type="text" id="first-name" maxlength="75" autocorrect required="required" />
+			<div class="inputLabel">Last Name*</div>
+			<input type="text" id="last-name" maxlength="75" autocorrect required="required"/> 
+			<div class="inputLabel">Email*</div>
+			<input type="email" id="email" maxlength="75" autocorrect required="required"/>
+			<div class="inputLabel">Confirm Email*</div>
+			<input type="email" id="confirmemail" maxlength="75" autocorrect required="required"/>
+			<div class="inputLabel">Zip Code*</div>
+			<input type="text" id="company" maxlength="75" autocorrect /> 
+		</fieldset>
+		<fieldset id="webhostSubscribe">	
+				<label><input type="checkbox" id="subscribe" name="subscribe" value="Sign me right up" /> YEP, SIGN ME RIGHT UP FOR EXCLUSIVE EMAIL DEALS, DISCOUNTS AND MORE
+					<label><input type="checkbox" id="webhost" name="webhost" value="I am 18 years or older" /> I AM 18 YEARS OR OLDER
+				</label>
+				</label>	
+		</fieldset>
+		<fieldset id="submitFieldset">
+			<button type="submit" id="submit" class="oneup" ></button>
+		</fieldset>
+		
+		
+    </section>
+   
+</article>
+
+</body>
+</html>
